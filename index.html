@@ -17,7 +17,7 @@
 
 <body class="null">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
             <a class="navbar-brand" href="index.html" rel="tooltip" title="Eman Ahamed" data-placement="bottom">
                 Eman Ahamed
@@ -48,10 +48,10 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Hero Section -->
-    <header class="">
+    <!-- <header class="">
         <div class="page-header min-vh-90">
             <div class="oblique position-absolute top-0 h-100 d-md-block d-none">
                 <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
@@ -72,8 +72,111 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+    <!-- -------- START HEADER 2 w/ waves and typed text ------- -->
+    <header class="position-relative">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none">
+            <div class="container">
+                <a class="navbar-brand text-white" href="javascript:;">Eman Ahamed</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header-2"
+                    aria-controls="navbar-header-2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-header-2">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="home.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="aboutme.html">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="blogs.html">
+                                Blogs
+                            </a>
+                        </li>
+                    </ul>
 
+                    <!-- <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="https://twitter.com/CreativeTim">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="https://www.facebook.com/CreativeTim">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="https://www.instagram.com/CreativeTimOfficial">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+        <div class="page-header min-vh-100" style="background-image: url(assets/images/formal_portrait.jpg);">
+            <span class="mask bg-gradient-primary"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 text-start">
+                        <h1 class="text-white">Hello! I'm Eman Ahamed.<br> I am a <span class="text-white"
+                                id="typed"></span></h1>
+                        <div id="typed-strings">
+                            <h1>Student</h1>
+                            <h1>Developer</h1>
+                            <h1>Tech Enthusiast</h1>
+                        </div>
+                        <p class="lead text-white text-start pe-5 mt-4">Inquisitive, energetic 2nd year Mathematical
+                            Computation student with a strong foundation in mathematics, logic, and programming. Seeking
+                            to leverage solid skills in collaboration, communication, and development as a programmer. A
+                            keen proponent of technology, looking to pursue a career in FinTech sector, with a focus on
+                            Artificial Intelligence and Data Analysis.</p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute w-100 z-index-1 bottom-0">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="moving-waves">
+                    <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(251,251,251,0.40" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(251,251,251,0.35)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(251,251,251,0.25)" />
+                    <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(251,251,251,0.20)" />
+                    <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(251,251,251,0.15)" />
+                    <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(251,251,251,0.95" />
+                </g>
+            </svg>
+        </div>
+    </header>
+    <!-- -------- END HEADER 2 w/ waves and typed text ------- -->
+
+
+    <!-- Mandatory init script -->
+    <script>
+        if (document.getElementById("typed")) {
+            var typed = new Typed("#typed", {
+                stringsElement: "#typed-strings",
+                typeSpeed: 70,
+                backSpeed: 50,
+                backDelay: 200,
+                startDelay: 500,
+                loop: true
+            });
+        }
+    </script>
 
 
     <!-- <section class="py-5">
@@ -295,7 +398,7 @@
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-warning">CodePro e-learning Platform</h4>
-                                
+
                                 <span class="badge rounded-pill bg-primary mb-2">HTML</span>
                                 <span class="badge rounded-pill bg-info mb-2">Bootstrap 5</span>
                                 <span class="badge rounded-pill bg-warning mb-2">ES6</span>
@@ -339,7 +442,7 @@
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-warning">Goal - World Cup Scheduler</h4>
-                                
+
                                 <span class="badge rounded-pill bg-primary mb-2">HTML 5</span>
                                 <span class="badge rounded-pill bg-danger mb-2">CSS3</span>
                                 <span class="badge rounded-pill bg-secondary mb-2">Responsive Design</span>
@@ -373,7 +476,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 mx-auto text-center">
                     <div class="ms-3 mb-md-5">
-                        <h3>Contact us</h3>
+                        <h3>Contact Me</h3>
                         <p>
                             For further questions, including partnership&collaboration opportunities, freelance work
                             please email
@@ -512,5 +615,5 @@
             });
         }
     </script>
-    
+
 </body>
